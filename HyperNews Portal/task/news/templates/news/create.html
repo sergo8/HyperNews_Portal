@@ -1,0 +1,12 @@
+<body>
+    <form action="/news/" method="post">
+        {% csrf_token %}
+        <p>Title:</p>
+        <input type="text" name="title">
+        <p>Text:</p>
+        <input type="text" name="text">
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <a target="_blank" href="/news/">Back to news</a>
+</body>
